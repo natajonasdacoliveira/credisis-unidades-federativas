@@ -40,3 +40,46 @@ Usuários:
 }
 
 Utilize o body para enviar esses dados
+
+# SQL
+
+drop database if exists UF;
+create database UF;
+use uf;
+
+create table user(	
+	id int auto_increment primary key,
+	email varchar(200) not null unique,
+    password BINARY(60) not null
+);
+
+create table estados(
+	id int auto_increment primary key,
+	nome varchar(200) not null,
+    sigla varchar(200) not null
+);
+
+create table municipios(
+	id int auto_increment primary key,
+	nome varchar(200) not null,
+	prefeito varchar(200),
+    populacao integer,
+    id_estado_fk int,
+    foreign key(id_estado_fk) references estados(id) on delete set null
+);
+
+insert into user values(null, "teste@gmail.com", "$2a$10$zHj6itdxGyYs9n3/nk6t6.UA6RyrsZIUe1waO.NQK6WaieFct0VXC");
+insert into user values(null, "teste2@gmail.com", "$2a$10$zHj6itdxGyYs9n3/nk6t6.UA6RyrsZIUe1waO.NQK6WaieFct0VXC");
+
+insert into estados values(null, "Rondônia", "RO");
+insert into municipios values(null, "Ji-paraná", "Marcito Aparecido Pinto", 130.009, 1);
+
+
+
+
+
+
+
+
+
+
