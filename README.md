@@ -25,7 +25,7 @@ Exemplo de rota não autenticada:localhost:1323/municipios (GET)
 
 Exemplo de rota autenticada:localhost:1323/jwt/municipios (POST, PUT, DELETE)
 
-As rotas autenticadas utilizam o bearer token que é recebido na /login (POST)
+As rotas autenticadas utilizam o bearer token que é recebido na localhost:1323/login (POST)
 
 Usuários:
 
