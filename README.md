@@ -24,3 +24,19 @@ Podem ser encontradas no arquivo server.go, na função main.
 Exemplo de rota não autenticada:localhost:1323/municipios (GET)
 
 Exemplo de rota autenticada:localhost:1323/jwt/municipios (POST, PUT, DELETE)
+
+As rotas autenticadas utilizam o bearer token que é recebido na /login (POST)
+
+Usuários:
+
+{
+	"email":"teste@gmail.com",
+	"password":"123123Teste"
+}
+
+{
+	"email":"teste2@gmail.com",
+	"password":"123123Teste"
+}
+
+Utilize o body para enviar esses dados
