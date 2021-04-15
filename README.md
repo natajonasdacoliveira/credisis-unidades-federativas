@@ -2,6 +2,9 @@
 Atividade 2 
 
 # Instalando
+
+Instale o golang https://golang.org/
+
 git clone https://github.com/natajonasdacoliveira/credisis-unidades-federativas
 
 cd /credisis-unidades-federativas
